@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "strict": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ]
+  },
+  "include": [
+    "lib/**/*"
+  ]
+}

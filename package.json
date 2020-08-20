@@ -1,0 +1,29 @@
+{
+  "name": "@worksbutnottested/stalker-coverage",
+  "version": "2.0.0",
+  "description": "Stalker coverage library",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:worksbutnottested/stalker-coverage.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@worksbutnottested"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "lint": "tslint -p tslint.json",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^16.1.0",
+    "@types/node": "^14.0.14",
+    "typescript": "^4.0.2",
+    "typescript-tslint-plugin": "^0.5.5",
+    "tslint": "^6.1.3"
+  }
+}

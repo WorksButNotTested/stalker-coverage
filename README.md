@@ -34,12 +34,13 @@ $ gcc -rdynamic -o test test.c
 We can then start using the [frida-agent-example](https://github.com/oleavr/frida-agent-example) as a template project and install the `stalker-coverage` module:
 ```bash
 $ npm install
-$ npm install --save stalker-coverage
+$ npm install --save ./stalker-coverage
 ```
 ## Using Stalker-Coverage
-We can then interact with this module using the following typescript code:
+We can then interact with this module using the following typescript code
+(put this in `frida-agent-example/agent/index.ts`):
 ```typescript
-import { Coverage } from "../node_modules/stalker-coverage/dist/coverage";
+import { Coverage } from "@worksbutnottested/stalker-coverage/dist/coverage";
 /*
  * This sample replaces the 'main' function of the target application with one which starts
  * collecting coverage information, before calling the original 'main' function. Once the
